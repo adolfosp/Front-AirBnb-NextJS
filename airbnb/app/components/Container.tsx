@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 
 interface ContainerProps {
@@ -7,7 +8,9 @@ interface ContainerProps {
 //Se você deseja restringir os tipos de retorno de componentes, use React.FC.
 const Container: React.FC<ContainerProps> = ({children}) => {
     return(
-        <div>Container</div>
+        <div className="max-w-[2520px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4">{children}
+        
+        </div>
     )
 }
 
